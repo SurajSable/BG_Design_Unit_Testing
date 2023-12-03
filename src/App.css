@@ -1,0 +1,353 @@
+/* .hover :hover{
+  background-color: rgba(255, 255, 255, 0.679);
+  color:rgba(8, 0, 0, 0.356);
+} */
+
+.navbar-nav .nav-item:hover {
+  background-color: rgba(255, 255, 255, 0.679);
+  color:rgba(8, 0, 0, 0.356);
+}
+
+
+
+.bg-img {
+  background-image: url("https://static.wixstatic.com/media/0e5bdd_8f377927d33449b4a8bc79d1f2108eb8~mv2.png/v1/fill/w_980,h_624,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/0e5bdd_8f377927d33449b4a8bc79d1f2108eb8~mv2.png");
+  background-size: cover;
+  background-Position: 'center';
+  width: 100%;
+  height:100vh;
+background-attachment:fixed;
+}
+
+.bg-img2 {
+  background-image: url("https://static.wixstatic.com/media/0e5bdd_8f377927d33449b4a8bc79d1f2108eb8~mv2.png/v1/fill/w_980,h_624,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/0e5bdd_8f377927d33449b4a8bc79d1f2108eb8~mv2.png");
+background-size: 20px;
+background-repeat: no-repeat;
+width: 100%;
+/* background-attachment:fixed; */
+}
+.vertical-line {
+  height: 70px; /* Adjust the height as needed */
+  width: 0px;
+  border-left: 1px solid #ffffff;
+}
+
+.wixui-rich-text__text {
+  font-family: 'Roboto Condensed', sans-serif;
+  letter-spacing: 0.2px; /* Adjust the letter spacing as needed */
+  line-height: 22px;
+  font-weight: normal;
+}
+
+.gry-text{
+  color: rgba(255, 255, 255, 0.679);
+}
+
+.red-box{
+  background-color: rgba(206, 32, 38,1);
+  box-shadow: 0px -1px 10px 0px rgba(0, 0, 0,0.7);
+
+}
+
+.mti-img{
+  background-image: url("https://static.wixstatic.com/media/161409_706084fe2852427b9662c7eb0c89153c~mv2.jpg/v1/fill/w_386,h_111,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/MICRO%20TECH%20logo_JPG.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:60%;
+}
+
+.ssk-img{
+ background-repeat: no-repeat;
+  background-image: url("https://static.wixstatic.com/media/161409_d880ed9d6cab4efaab7c72dbbae7b237~mv2.png/v1/fill/w_369,h_90,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/161409_d880ed9d6cab4efaab7c72dbbae7b237~mv2.png");
+  background-position: center;
+  background-size: 60%;
+}
+.htm-img{
+  background-image: url("https://static.wixstatic.com/media/161409_5366a129e5bf4864871155c9ffc3c45f~mv2.png/v1/fill/w_254,h_146,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/161409_5366a129e5bf4864871155c9ffc3c45f~mv2.png");
+  background-repeat: no-repeat;
+  height:120px;
+  background-position: center;
+  background-size: 50%;
+}
+
+.pcs-img{
+  background-image: url("https://static.wixstatic.com/media/161409_60fc5adb8509490f929b795d88bb5520~mv2.jpg/v1/fill/w_162,h_146,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/PCS.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height:150px;
+  background-size: 30%;
+}
+
+.cas-img{
+  background-image: url("https://static.wixstatic.com/media/161409_42a74a076c87454b96dd0b80c0116beb~mv2.png/v1/fill/w_239,h_161,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Casper%20cranes.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40%;
+}
+
+.pesc-img{
+  background-image: url("https://static.wixstatic.com/media/161409_162c2a7d9ff84390ae2c42ee8a24bc94~mv2.png/v1/fill/w_396,h_66,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/PPI_PNG.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80%;
+}
+
+.fai-img{
+  background-image: url("https://static.wixstatic.com/media/161409_112d2dddfc6041068a76cb38897c380e~mv2.png/v1/fill/w_392,h_90,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/final%20faith.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  height:100px;
+  background-size: 20%;
+}
+
+
+.vertical-line2{
+  height: 40px; /* Adjust the height as needed */
+  width: 0px;
+  border-left: 1px solid #ffffff;
+  padding: 3px;
+ }
+
+ .visit-img{
+  
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 93%;
+  background-image: url("https://static.wixstatic.com/media/3b1f25_c7e4627c95dd443cb90a9d59fadd9ef1.jpg/v1/fill/w_468,h_210,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/3b1f25_c7e4627c95dd443cb90a9d59fadd9ef1.jpg");
+ }
+ .visit-hover:hover{
+  background-color: rgba(213, 84, 84, 0.679);
+
+ }
+ .visit-hover{
+  width: 100%;
+  
+  background-color: rgba(206, 32, 38,1);
+  border-radius: 0%;
+
+ }
+
+ .map-box{
+height: 100vh;
+background-color: rgba(238,240,228,1);
+ }
+
+ .hr-line{
+ 
+  background-color:white;
+  color:black;
+ }
+
+ .m1-img{
+  box-shadow: 5px 5px 10px 0 rgba(0,0,0,0.1);
+  background-size: 100%;
+ background-repeat: no-repeat;
+  background-image: url("https://static.wixstatic.com/media/161409_c54c0800f02042bf958114aceac06720~mv2_d_1920_1281_s_2.jpg/v1/crop/x_93,y_0,w_1734,h_1281/fill/w_584,h_423,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/drill-444493_1920.jpg");
+ }
+
+ .m2-img{
+  background-size: 100%;
+ background-repeat: no-repeat;
+ box-shadow: 5px 5px 10px 0 rgba(0,0,0,0.1);
+ background-image: url("https://static.wixstatic.com/media/161409_d975d2d7e93641ef945e4add87a0baf6~mv2.png/v1/fill/w_584,h_423,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/injec.png");
+}
+
+.m3-img{
+  background-size: 100%;
+ background-repeat: no-repeat;
+  box-shadow: 5px 5px 10px 0 rgba(0,0,0,0.1);
+ background-image: url("https://static.wixstatic.com/media/e592d5b87e234c849e8363ee949932a0.jpg/v1/fill/w_584,h_423,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/A%20Man%20Welding.jpg");
+}
+
+.m4-img{
+  background-size: 100%;
+  background-repeat: no-repeat;
+  box-shadow: 5px 5px 10px 0 rgba(0,0,0,0.1);
+  background-image: url("https://static.wixstatic.com/media/b6952131692d4ba886180322b1a12184.jpg/v1/fill/w_584,h_423,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/3D%20Printer.jpg");
+}
+
+.s1-img{
+  background-size: 100%;
+  background-repeat: no-repeat;
+  box-shadow: 5px 5px 10px 0 rgba(0,0,0,0.1);
+  background-image: url("https://static.wixstatic.com/media/6a401562b21040bd8d76faeff9042212.jpg/v1/crop/x_40,y_0,w_920,h_667/fill/w_584,h_423,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Mechanical%20Engineer's%20Sketch.jpg");
+}
+
+.s2-img{
+  background-size: 100%;
+  background-repeat: no-repeat;
+  box-shadow: 5px 5px 10px 0 rgba(0,0,0,0.1);
+background-image: url("https://static.wixstatic.com/media/161409_d975d2d7e93641ef945e4add87a0baf6~mv2.png/v1/fill/w_584,h_423,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/injec.png");
+}
+
+.s3-img{
+  background-size: 100%;
+  background-repeat: no-repeat;
+  box-shadow: 5px 5px 10px 0 rgba(0,0,0,0.1);
+background-image: url("https://static.wixstatic.com/media/11062b_495f820f15044bc1818be58edaa4320c~mv2_d_5500_3668_s_4_2.jpg/v1/fill/w_584,h_423,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Engineering%20Class.jpg");
+}
+
+.s4-img{
+  background-size: 100%;
+  background-repeat: no-repeat;
+  box-shadow: 5px 5px 10px 0 rgba(0,0,0,0.1);
+  background-image: url("https://static.wixstatic.com/media/11062b_01f5e55bd4d64484b508699b04440e1d~mv2.jpg/v1/fill/w_584,h_423,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/Virtual%20Reality.jpg");
+}
+
+ .gallery{
+   display: flex;
+  flex-direction: column;
+} 
+
+ .box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+ .dream {
+  display: flex;
+  flex-direction: column;
+  width: 32.5;
+}
+
+.dream img{
+  width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.know-more:hover{
+  background-color: rgb(118, 5, 9);
+  color: #ffffff;
+}
+
+ .know-more{
+  /* border-top-right-radius: 35%; */
+background-color: #ffffff;
+color: rgba(12, 13, 13, 0.892);
+margin:35px;
+border: 2px solid black;
+ }
+
+ .line-serv{
+  margin-top:15px;
+  padding: 25px;
+  background-color: rgba(206, 32, 38,1);
+  color: #ffffff;
+ }
+
+ .hexagon-container {
+  position: relative;
+  left: 0%;
+}
+
+
+.hexagon-svg{
+  color: rgba(206, 32, 38,1);
+}
+
+.hexagon-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1; /* Ensure the image is on top of the HexagonOutlinedIcon */
+}
+
+.hexagonalarea1{
+  display: flex;
+}
+.hexagonalarea2{
+  display: flex;
+}
+
+.hexagonser{
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: -4px 10px;
+  /* padding: 10%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  overflow: hidden;
+  clip-path: polygon(0 25%, 50% 0,100% 25%, 100% 75%,50% 100% ,0 75%);
+  transition: background-color 0.3s;
+}
+
+
+  .hexagonser:hover {
+  background-color: rgba(213, 84, 84, 0.679);
+}
+
+.hexa1{
+ background-size: 100%;
+ background-repeat: no-repeat; 
+ background-image: url("https://static.wixstatic.com/media/c1f59683d2b04df8e9d36e47d7e7e795.jpg/v1/fill/w_549,h_551,al_c,q_80,usm_0.66_1.00_0.01/c1f59683d2b04df8e9d36e47d7e7e795.jpg");
+}
+.hexa2{
+  background-size: 100%;
+  background-repeat: no-repeat; 
+   background-image: url("https://static.wixstatic.com/media/88e47c3e63684d1c91a4de7a8f82e9c8.jpg/v1/fill/w_549,h_551,al_c,q_80,usm_0.66_1.00_0.01/88e47c3e63684d1c91a4de7a8f82e9c8.jpg");
+ }
+ .hexa3{
+  background-size: 100%;
+  background-repeat: no-repeat; 
+   background-image: url("https://static.wixstatic.com/media/6a401562b21040bd8d76faeff9042212.jpg/v1/fill/w_549,h_551,al_c,q_80,usm_0.66_1.00_0.01/6a401562b21040bd8d76faeff9042212.jpg");
+ }
+ .hexa4{
+  background-size: 100%;
+  background-repeat: no-repeat; 
+   background-image: url("https://static.wixstatic.com/media/721d3474cc16469eb8a10ea4cf4b625a.jpg/v1/fill/w_549,h_551,al_c,q_80,usm_0.66_1.00_0.01/721d3474cc16469eb8a10ea4cf4b625a.jpg");
+ }
+ .hexa5{
+  background-size: 100%;
+  background-repeat: no-repeat; 
+   background-image: url("https://static.wixstatic.com/media/e072e6c5d2c848acb1141b3d653a6591.jpg/v1/fill/w_549,h_551,al_c,q_80,usm_0.66_1.00_0.01/e072e6c5d2c848acb1141b3d653a6591.jpg");
+ }
+ .hexa6{
+  background-size: 100%;
+  background-repeat: no-repeat; 
+   background-image: url("https://static.wixstatic.com/media/e072e6c5d2c848acb1141b3d653a6591.jpg/v1/fill/w_549,h_551,al_c,q_80,usm_0.66_1.00_0.01/e072e6c5d2c848acb1141b3d653a6591.jpg");
+ }
+ .hexa7{
+  background-size: 100%;
+  background-repeat: no-repeat; 
+   background-image: url("https://static.wixstatic.com/media/1f182e8be7c34ee6af0cb456884d8673.jpg/v1/fill/w_549,h_551,al_c,q_80,usm_0.66_1.00_0.01/1f182e8be7c34ee6af0cb456884d8673.jpg");
+ }
+ .hexa8{
+  background-size: 100%;
+  background-repeat: no-repeat; 
+background-image: url("https://static.wixstatic.com/media/b25591_bbd372e536434c859bf040766757df4a~mv2_d_3000_3000_s_4_2.jpg/v1/fill/w_549,h_551,al_c,q_80,usm_0.66_1.00_0.01/b25591_bbd372e536434c859bf040766757df4a~mv2_d_3000_3000_s_4_2.jpg");
+}
+ .hexa9{
+  background-size: 100%;
+  background-repeat: no-repeat; 
+background-image: url("https://static.wixstatic.com/media/5e960dc55c064a92aeb2aaa31d57cbcb.jpg/v1/fill/w_549,h_551,al_c,q_80,usm_0.66_1.00_0.01/5e960dc55c064a92aeb2aaa31d57cbcb.jpg");
+}
+      
+ .hexa10{
+background-image: url("https://static.wixstatic.com/media/be0c8732c52445f79601e0965fa55b0e.jpg/v1/fill/w_549,h_551,al_c,q_80,usm_0.66_1.00_0.01/be0c8732c52445f79601e0965fa55b0e.jpg");  
+  background-size: 100%;
+  background-repeat: no-repeat; 
+ }
+ 
+
+
+.hexagonalarea1 .hexagonser:hover,
+.hexagonalarea2 .hexagonser:hover {
+  background-color: rgba(213, 84, 84, 0.679);
+  transform: scale(1.1); /* Adjust the scale factor as needed */
+} 
+
+.hexagonalarea2{
+ /* transform: translateY(-45px); */
+ /* transform: translateY(-10px); */
+transform: translateX(56px);
+ 
+
+}

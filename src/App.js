@@ -13,8 +13,7 @@ import Manufacturing from './pages/Manufacturing';
 import Engineeringservices from './pages/Engineeringservices';
 const App=()=> {
   
-  return (
-   
+  return ( 
  <div className='bg-img'>
    <Router>
         <Navbar/>
@@ -28,7 +27,6 @@ const App=()=> {
           <Route exact path="/footer" element={<Footer/>} />
           <Route exact path="/manufacturing" element={<Manufacturing/>} />
           <Route exact path="/engineering-services" element={<Engineeringservices/>} />
-
         </Routes>
         <Footer/>
       </Router>

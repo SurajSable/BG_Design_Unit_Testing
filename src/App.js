@@ -19,8 +19,8 @@ const App=()=> {
         <Navbar/>
        
         <Routes >
-          <Route exact path="/" element={<Home/>}/>
-          <Route exact path="/services" element={<Services/>} />
+          <Route exact path="/BG_Design_AS" element={<Home/>}/>
+          <Route exact path="/BG_Design_AS/services" element={<Services/>} />
           <Route exact path="/about" element={<About/>} />
           <Route exact path="/gallery" element={<Gallery/>} />
           <Route exact path="/contact" element={<Contact/>} />

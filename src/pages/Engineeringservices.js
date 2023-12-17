@@ -22,7 +22,6 @@ const Engineeringservices = () => {
         <p className="">
           In Boss Groups, we have engineers who can uncover the less known, to develop and give products/ service that offer great value to our customer.
         </p>
-\
         <div class="row ">
           <div class="col-6  ">
             <div className='m-4  s1-img '>

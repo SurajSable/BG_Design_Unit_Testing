@@ -351,3 +351,33 @@ transform: translateX(56px);
  
 
 }
+
+
+.ss1-img{
+  background-size: 100%;
+  background-repeat: no-repeat;
+  box-shadow: 5px 5px 10px 0 rgba(0,0,0,0.1);
+  background-image: url("https://media.licdn.com/dms/image/D5612AQFSPUPv4Gcv_A/article-cover_image-shrink_600_2000/0/1690548047583?e=1708560000&v=beta&t=OAoE1Roq50UA2IY6kK1RjsYnOsGtZj067o70LqWa3FY");
+}
+
+
+.ss3-img{
+  background-size: 100%;
+  background-repeat: no-repeat;
+  box-shadow: 5px 5px 10px 0 rgba(0,0,0,0.1);
+background-image: url("https://kinsta.com/wp-content/uploads/2021/05/what-is-node-js-featured-image.jpg");
+}
+
+.ss2-img{
+  background-size: 100%;
+  background-repeat: no-repeat;
+  box-shadow: 5px 5px 10px 0 rgba(0,0,0,0.1);
+background-image: url("https://intellipaat.com/blog/wp-content/uploads/2022/06/image-96.png");
+}
+
+.ss4-img{
+  background-size: 100%;
+  background-repeat: no-repeat;
+  box-shadow: 5px 5px 10px 0 rgba(0,0,0,0.1);
+  background-image: url("https://orangematter.solarwinds.com/wp-content/uploads/2022/03/DevOps-lifecycle-capabilities-1024x621.png");
+}

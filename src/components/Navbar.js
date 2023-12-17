@@ -75,6 +75,11 @@ const Navbar = () => {
                         Engineering Services
                       </Link>
                     </div>
+                    <div className='nav-item p-1'>
+                      <Link to="/software-services" className="text-white link-underline link-underline-opacity-0 inline-block mt-2">
+                        Software Services
+                      </Link>
+                    </div>
                   </div>
                 )}
               </li>

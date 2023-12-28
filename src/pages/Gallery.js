@@ -51,6 +51,7 @@ const Gallery = () => {
         <div className='box' >
           <div className='dream' >
             <img
+            data-testid="img1"
               onClick={() => handleOpen('https://static.wixstatic.com/media/161409_8a3f6f52f450443782f643ff0214fe9b~mv2.jpg/v1/fill/w_474,h_677,al_c,q_80,usm_0.66_1.00_0.01/161409_8a3f6f52f450443782f643ff0214fe9b~mv2.jpg', 0)}
               src='https://static.wixstatic.com/media/161409_8a3f6f52f450443782f643ff0214fe9b~mv2.jpg/v1/fill/w_474,h_677,al_c,q_80,usm_0.66_1.00_0.01/161409_8a3f6f52f450443782f643ff0214fe9b~mv2.jpg'
               alt='Description of the first image'
@@ -144,12 +145,12 @@ const Gallery = () => {
           }}
         >
           <div className='d-flex justify-content-end'>
-            <IconButton onClick={handleClose} >
+            <IconButton data-testid="hclose" onClick={handleClose} >
               <CloseIcon className='text-white' />
             </IconButton>
           </div>
           <div className=' d-flex justify-content-between' style={{ marginTop: '10px' }}>
-<IconButton className='' onClick={handlePrev} disabled={selectedImageIndex === 0}>
+<IconButton data-testid="hprev" className='' onClick={handlePrev} disabled={selectedImageIndex === 0}>
               <ArrowBackIosIcon className='text-white' />
             </IconButton>
 
@@ -160,7 +161,7 @@ const Gallery = () => {
                 style={{ maxWidth: '100%', maxHeight: '80vh', objectFit: 'contain' }}
               />
             )}
-            <IconButton className=" " onClick={handleNext} disabled={selectedImageIndex === images.length - 1}>
+            <IconButton data-testid="hnext"  onClick={handleNext} disabled={selectedImageIndex === images.length - 1}>
               <ArrowForwardIosIcon className='text-white' />
             </IconButton>
           </div>

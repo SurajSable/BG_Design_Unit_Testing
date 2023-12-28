@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div className='bg-white'>
       <div className='p-3 '>
-        <h2 className='text-center' style={{ fontFamily: 'Georgia, serif' }}> ABOUT US</h2>
+        <h2 className='text-center' style={{ fontFamily: 'Georgia, serif' }}>ABOUT US</h2>
       </div>
       <div className='container '>
         <div className='row'>
@@ -40,8 +40,8 @@ const About = () => {
 
         <div >
           <h4 className='text-center' style={{ fontFamily: 'Georgia, serif', color: 'rgb(137, 21, 25)' }}>VISION</h4>
-          <p className="wixui-rich-text__text" style={{ fontSize: 18 }}>"Our Vision is to be a leader in providing innovative solution to all our technological needs. We endeavour to fulfill our
-            <div className='text-center'> clients expectations beyond there wildest dreams .." </div></p>
+          <div className="wixui-rich-text__text" style={{ fontSize: 18 }}>"Our Vision is to be a leader in providing innovative solution to all our technological needs. We endeavour to fulfill our
+            <div className='text-center'> clients expectations beyond there wildest dreams .." </div></div>
         </div>
 
         <div className='pt-2 pb-3'>

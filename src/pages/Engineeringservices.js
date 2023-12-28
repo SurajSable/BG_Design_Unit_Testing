@@ -3,15 +3,15 @@ import React from 'react'
 const Engineeringservices = () => {
   return (
     < div className='bg-white'>
-      <div class="container text-center pt-3">
-        <div class="row justify-content-md-center">
-          <div class="col col-lg-3 hr-line ">
+      <div className="container text-center pt-3">
+        <div className="row justify-content-md-center">
+          <div className="col col-lg-3 hr-line ">
             <hr />
           </div>
-          <div class="col-md-auto" style={{ fontFamily: 'Georgia, serif' }}>
+          <div className="col-md-auto" style={{ fontFamily: 'Georgia, serif' }}>
             <h3>OVERVIEW</h3>
           </div>
-          <div class="col col-lg-3 hr-line">
+          <div className="col col-lg-3 hr-line">
             <hr />
           </div>
         </div>
@@ -22,8 +22,8 @@ const Engineeringservices = () => {
         <p className="">
           In Boss Groups, we have engineers who can uncover the less known, to develop and give products/ service that offer great value to our customer.
         </p>
-        <div class="row ">
-          <div class="col-6  ">
+        <div className="row ">
+          <div className="col-6  ">
             <div className='m-4  s1-img '>
               <div className='' style={{ paddingTop: "255px" }}>
                 <h4 className='bg-white' style={{ width: "340px" }}>Mechanical Engineering</h4>
@@ -49,7 +49,7 @@ const Engineeringservices = () => {
             </div>
           </div>
 
-          <div class="col-6  ">
+          <div className="col-6  ">
             <div className='m-4  s3-img '>
               <div className='' style={{ paddingTop: "255px" }}>
                 <h4 className='bg-white' style={{ width: "280px" }}>Special Purpose Machine</h4>

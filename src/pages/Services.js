@@ -22,9 +22,9 @@ const Services = () => {
   return (
     <>
       <div className='bg-white'>
-        <div class="container pb-5">
-          <div class="row  pt-5">
-            <div class="col-8 ">
+        <div className="container pb-5">
+          <div className="row  pt-5">
+            <div className="col-8 ">
               <h4 className='pt-4' style={{ fontFamily: 'Georgia, serif' }}><b>OUR SERVICES IS DESIGNED TO HELP YOUR BUSINESS <br />
                 <p className='text-center' >MAKE AN IMPACT </p></b> </h4>
               <p style={{ fontSize: "18px" }} className='ps-4 pb-2'>
@@ -43,7 +43,7 @@ const Services = () => {
               </div>
 
             </div>
-            <div class="col-4  ">
+            <div className="col-4  ">
               <div className='hexagonalarea1'>
                 <div className='hexagonser hexa1'>
                 </div>
@@ -52,7 +52,7 @@ const Services = () => {
                 <div className='hexagonser hexa3'>
                 </div>
               </div>
-\              <div className='hexagonalarea2'>
+              <div className='hexagonalarea2'>
                 <div className='hexagonser hexa4'>
                 </div>
                 <div className='hexagonser hexa5'>
@@ -84,7 +84,7 @@ const Services = () => {
           <div className='row  '>
 
             <div className='col-4  p-5' >
-              <div style={{ height: "100%" }} onMouseOver={() => { handleMouseEnter("manufacturing") }} onMouseLeave={handleMouseLeave}>
+              <div style={{ height: "100%" }} data-testid="mOver" onMouseOver={() =>  handleMouseEnter("manufacturing") } onMouseLeave={handleMouseLeave}>
                 {isHovered.manufacturing ? <div className=" bg-opacity-75 " style={{ fontFamily: 'Georgia, serif', backgroundColor: "#F78181", height: "100%" }}>
 
                   <div className='hexagon-container' >
@@ -114,7 +114,7 @@ const Services = () => {
             </div>
 
             <div className='col-4  p-5'>
-              <div style={{ height: "100%" }} onMouseOver={() => { handleMouseEnter("engineering") }} onMouseLeave={handleMouseLeave}>
+              <div style={{ height: "100%" }} data-testid="mOver" onMouseOver={() => { handleMouseEnter("engineering") }} onMouseLeave={handleMouseLeave}>
                 {isHovered.engineering ? <div className=" bg-opacity-75 " style={{ fontFamily: 'Georgia, serif', backgroundColor: "#F78181", height: "100%" }}>
 
                   <div className='hexagon-container' >
@@ -145,7 +145,7 @@ const Services = () => {
             </div>
 
             <div className='col-4  p-5' >
-              <div style={{ height: "100%" }} onMouseOver={() => { handleMouseEnter("devlopment") }} onMouseLeave={handleMouseLeave}>
+              <div style={{ height: "100%" }} data-testid="mOver" onMouseOver={() => { handleMouseEnter("devlopment") }} onMouseLeave={handleMouseLeave}>
                 {isHovered.devlopment ? <div className=" bg-opacity-75 " style={{ fontFamily: 'Georgia, serif', backgroundColor: "#F78181", height: "100%" }}>
                   <div className='hexagon-container' >
                     <svg >

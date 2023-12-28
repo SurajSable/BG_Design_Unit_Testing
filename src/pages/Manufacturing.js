@@ -4,15 +4,15 @@ import React from 'react'
 const Manufacturing = () => {
   return (
     < div className='bg-white'>
-      <div class="container text-center pt-3">
-        <div class="row justify-content-md-center">
-          <div class="col col-lg-3 hr-line ">
+      <div className="container text-center pt-3">
+        <div className="row justify-content-md-center">
+          <div className="col col-lg-3 hr-line ">
             <hr />
           </div>
-          <div class="col-md-auto" style={{ fontFamily: 'Georgia, serif' }}>
+          <div className="col-md-auto" style={{ fontFamily: 'Georgia, serif' }}>
             <h3>OVERVIEW</h3>
           </div>
-          <div class="col col-lg-3 hr-line">
+          <div className="col col-lg-3 hr-line">
             <hr />
           </div>
         </div>
@@ -22,8 +22,8 @@ const Manufacturing = () => {
         <p className="">
           We have partnered up with many fabricating & machining houses with highly skill labors and state of the art equipment to provide high quality manufacturing service.
         </p>
-        <div class="row ">
-          <div class="col-6  ">
+        <div className="row ">
+          <div className="col-6  ">
             <div className='m-4  m1-img '>
               <div className='' style={{ paddingTop: "254px" }}>
                 <h4 className='bg-white' style={{ width: "150px" }}>Machining</h4>
@@ -39,7 +39,7 @@ const Manufacturing = () => {
             </div>
           </div>
 
-          <div class="col-6  ">
+          <div className="col-6  ">
             <div className='m-4  m3-img '>
               <div className='' style={{ paddingTop: "254px" }}>
                 <h4 className='bg-white' style={{ width: "220px" }}>Steel Fabrication</h4>

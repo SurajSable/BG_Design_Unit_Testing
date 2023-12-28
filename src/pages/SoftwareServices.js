@@ -3,15 +3,15 @@ import React from 'react'
 const SoftwareServices = () => {
   return (
     < div className='bg-white'>
-      <div class="container text-center pt-3">
-        <div class="row justify-content-md-center">
-          <div class="col col-lg-3 hr-line ">
+      <div className="container text-center pt-3">
+        <div className="row justify-content-md-center">
+          <div className="col col-lg-3 hr-line ">
             <hr />
           </div>
-          <div class="col-md-auto" style={{ fontFamily: 'Georgia, serif' }}>
+          <div className="col-md-auto" style={{ fontFamily: 'Georgia, serif' }}>
             <h3>OVERVIEW</h3>
           </div>
-          <div class="col col-lg-3 hr-line">
+          <div className="col col-lg-3 hr-line">
             <hr />
           </div>
         </div>
@@ -22,8 +22,8 @@ const SoftwareServices = () => {
         <p className="">
         MERN stack is a collection of technologies that enables faster application development. It is used by developers worldwide. The main purpose of using MERN stack is to develop apps using JavaScript only. This is because the four technologies that make up the technology stack are all JS-based.
         </p>
-        <div class="row ">
-          <div class="col-6  ">
+        <div className="row ">
+          <div className="col-6  ">
             <div className='m-4  ss1-img '>
               <div className='' style={{ paddingTop: "160px" }}>
                 <h4 className='bg-white' style={{ width: "340px" }}>React - A JavaScript library</h4>
@@ -49,7 +49,7 @@ const SoftwareServices = () => {
             </div>
           </div>
 
-          <div class="col-6  ">
+          <div className="col-6  ">
             <div className='m-4  ss3-img '>
               <div className='' style={{ paddingTop: "200px" }}>
                 <h4 className='bg-white' style={{ width: "280px" }}>Express - Node.js web application framework</h4>

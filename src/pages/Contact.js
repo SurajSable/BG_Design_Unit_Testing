@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 
 const Contact = () => {
+  // const [email, setEmail] = useState('');
   const [data, setData] = useState({ name: "", email: "", subject: "", message: "" });
   const handleChange = (e) => {
     const name = e.target.name;
@@ -9,8 +10,47 @@ const Contact = () => {
   }
   const handleSubmit = (e) => {
     e.preventDefault()
-    setData({ name: "", email: "", subject: "", message: "" })
+    //emailSend(data.email);
+    setData({ name: '', email: '', subject: '', message: '' });
+    console.log(data);
   }
+
+  // const emailSend = (email) => {
+  //   // Add your email sending logic here
+  //   const userName = document.getElementById('name').value;
+  //   const message = document.getElementById('message').value;
+
+  //   const messageBody = "name" + userName + "<br/> email" + email + "<br/> message" + message;
+
+  //   // Replace 'email' with a proper email-sending library or API
+  //   // e.g., using fetch to send data to a server, which will handle the email sending
+  //   fetch('YOUR_EMAIL_SENDING_API', {
+  //     method: 'POST',
+  //     headers: {
+  //       'Content-Type': 'application/json',
+  //     },
+  //     body: JSON.stringify({
+  //       emailData: {
+  //         host: "smtp.elasticemail.com",
+  //         username: "anjusakhare26101999@gmail.com",
+  //         password: "2F045ABAA93C19D78E5B0EE0A04B9B2714D0",
+  //         to: 'surajpatilsable@gmail.com',
+  //         from: "anjusakhare26101999@gmail.com",
+  //         subject: "This is the subject",
+  //         body: messageBody,
+  //       },
+  //     }),
+  //   })
+  //     .then(response => response.json())
+  //     .then(data => {
+  //       console.log('Email sent:', data);
+  //       alert('Email sent successfully');
+  //     })
+  //     .catch(error => {
+  //       console.error('Error sending email:', error);
+  //       alert('Error sending email');
+  //     });
+  // };
   return (
     <div className='bg-white' >
       <div className='container' style={{ width: "70%", paddingTop: "80px ", fontFamily: 'Georgia, serif', paddingBottom: "100px" }} >
@@ -38,12 +78,14 @@ const Contact = () => {
             <br />
           </div>
           <div className=' col-8  '>
-            <form method='post' onSubmit={handleSubmit} >
-              <div className=' mb-4 me-5' >
+
+          <form onSubmit={handleSubmit}>
+                          <div className=' mb-4 me-5' >
                 <input
                   className=""
-                  type="name"
+                  type="text"
                   id="name"
+                  data-testid="name"
                   name="name"
                   style={{ width: '100%' }}
                   autoComplete="off"

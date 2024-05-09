@@ -381,3 +381,6 @@ background-image: url("https://intellipaat.com/blog/wp-content/uploads/2022/06/i
   box-shadow: 5px 5px 10px 0 rgba(0,0,0,0.1);
   background-image: url("https://orangematter.solarwinds.com/wp-content/uploads/2022/03/DevOps-lifecycle-capabilities-1024x621.png");
 }
+html {
+  scroll-behavior: smooth;
+}

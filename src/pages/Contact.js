@@ -1,56 +1,56 @@
-import React, { useState } from 'react'
+import React, { useState ,useEffect} from 'react'
+import emailjs from '@emailjs/browser';
+
+import {  useParams } from 'react-router-dom';
+
 
 const Contact = () => {
-  // const [email, setEmail] = useState('');
-  const [data, setData] = useState({ name: "", email: "", subject: "", message: "" });
-  const handleChange = (e) => {
-    const name = e.target.name;
-    const value = e.target.value;
-    setData({ ...data, [name]: value })
-  }
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [subject, setSubject] = useState('')
+  const [message, setMessage] = useState('');
+  const { contactId } = useParams();
+  
+  useEffect(() => {
+    if (contactId) {
+      const element = document.getElementById(contactId);
+      if (element) {
+        element.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start',
+        });
+      }
+    }
+  }, [contactId]);
+  
   const handleSubmit = (e) => {
     e.preventDefault()
-    //emailSend(data.email);
-    setData({ name: '', email: '', subject: '', message: '' });
-    console.log(data);
+    const serviceId = "service_ibg0fk3";
+    const templateId = "template_lep28cr";
+    const publickKey = 'ajNH14RQiy9ec_uS2';
+
+    const templateParams = {
+      from_name: name,
+      from_email: email,
+      to_name: "Bg Design Team",
+      to_email: "anjusakhare26101999@gmail.com",
+      subject: subject,
+      message: message,
+      
+    }
+
+    emailjs.send(serviceId, templateId, templateParams, publickKey)
+      .then((response) => {
+        console.log("email sent successfully", response);
+        setName("");
+        setEmail("");
+        setSubject("");
+        setMessage("");
+      }).catch((error) => {
+        console.log("error sending email", error)
+      });
   }
 
-  // const emailSend = (email) => {
-  //   // Add your email sending logic here
-  //   const userName = document.getElementById('name').value;
-  //   const message = document.getElementById('message').value;
-
-  //   const messageBody = "name" + userName + "<br/> email" + email + "<br/> message" + message;
-
-  //   // Replace 'email' with a proper email-sending library or API
-  //   // e.g., using fetch to send data to a server, which will handle the email sending
-  //   fetch('YOUR_EMAIL_SENDING_API', {
-  //     method: 'POST',
-  //     headers: {
-  //       'Content-Type': 'application/json',
-  //     },
-  //     body: JSON.stringify({
-  //       emailData: {
-  //         host: "smtp.elasticemail.com",
-  //         username: "anjusakhare26101999@gmail.com",
-  //         password: "2F045ABAA93C19D78E5B0EE0A04B9B2714D0",
-  //         to: 'surajpatilsable@gmail.com',
-  //         from: "anjusakhare26101999@gmail.com",
-  //         subject: "This is the subject",
-  //         body: messageBody,
-  //       },
-  //     }),
-  //   })
-  //     .then(response => response.json())
-  //     .then(data => {
-  //       console.log('Email sent:', data);
-  //       alert('Email sent successfully');
-  //     })
-  //     .catch(error => {
-  //       console.error('Error sending email:', error);
-  //       alert('Error sending email');
-  //     });
-  // };
   return (
     <div className='bg-white' >
       <div className='container' style={{ width: "70%", paddingTop: "80px ", fontFamily: 'Georgia, serif', paddingBottom: "100px" }} >
@@ -79,8 +79,8 @@ const Contact = () => {
           </div>
           <div className=' col-8  '>
 
-          <form onSubmit={handleSubmit}>
-                          <div className=' mb-4 me-5' >
+            <form onSubmit={handleSubmit}>
+              <div className=' mb-4 me-5' >
                 <input
                   className=""
                   type="text"
@@ -90,7 +90,8 @@ const Contact = () => {
                   style={{ width: '100%' }}
                   autoComplete="off"
                   placeholder='NAME'
-                  onChange={handleChange} value={data.name}
+                  onChange={(e) => setName(e.target.value)}
+                  value={name}
                   required=""
                 />
               </div>
@@ -104,27 +105,27 @@ const Contact = () => {
                   placeholder='EMAIL'
                   autoComplete="off"
                   required=""
-                  onChange={handleChange} value={data.email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  value={email}
                   style={{ width: '100%' }}
                 />
               </div>
 
               <div className=' mb-4 me-5'>
-                <input
+                <textarea
                   name="subject"
-                  id="input_comp-jxd8ewgx"
-                  className="KvoMHf has-custom-focus wixui-text-input__input"
-                  type="text"
-                  placeholder="Subject"
+                  placeholder='SUBJECT'
+                  rows="1"
+
                   required=""
-                  onChange={handleChange} value={data.subject}
-                  aria-required="true"
+            
                   autoComplete="off"
-                  aria-label="Subject"
-                  defaultValue=""
+                  onChange={(e) => setSubject(e.target.value)}
+                  value={subject}
                   style={{ width: '100%' }}
                 />
               </div>
+ 
 
               <div className=' mb-3 me-5 '>
                 <textarea
@@ -135,18 +136,28 @@ const Contact = () => {
                   placeholder='MESSAGE'
                   autoComplete="off"
                   required=""
-                  onChange={handleChange} value={data.message}
+                  onChange={(e) => setMessage(e.target.value)}
+                  value={message}
                   style={{ width: '100%' }}
                 ></textarea>
               </div>
-              <button type="button " className="btn btn-danger  float-end " style={{ width: "25%", borderRadius: "0" }}>Submit</button>
+              <button
+      type="submit"
+      className="btn btn-danger float-end"
+      style={{ width: "25%", borderRadius: "0" }}
+      disabled={!name || !email || !subject || !message}
+    >
+      Submit
+    </button>
             </form>
+
+
           </div>
 
         </div>
       </div>
       {/* ---map--- */}
-      <div className='map-box' >
+      <div className='map-box' id={contactId} >
         <div className='text-center ' style={{ paddingTop: "90px", fontSize: "20px" }}>
           GETTING HERE:
         </div>
@@ -154,9 +165,9 @@ const Contact = () => {
           No:134/15 SIDCO NP IE,Ambattur,Chennai.
         </div>
 
-        <div className='d-flex justify-content-center'>
+        <div className='d-flex justify-content-center'  >
           <div style={{ width: "75%", height: " 270px", }} >
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3885.7796040358107!2d80.17537820860927!3d13.113144011710014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52639395555555%3A0xe49746b4cec729bd!2sBG%20Design%20Systems!5e0!3m2!1sen!2sin!4v1701184517007!5m2!1sen!2sin" style={{ width: "100%", height: "100%" }}  ></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3885.7796040358107!2d80.17537820860927!3d13.113144011710014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52639395555555%3A0xe49746b4cec729bd!2sBG%20Design%20Systems!5e0!3m2!1sen!2sin!4v1701184517007!5m2!1sen!2sin"  style={{ width: "100%", height: "100%" }}  ></iframe>
           </div>
         </div>
 

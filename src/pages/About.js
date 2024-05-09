@@ -1,6 +1,20 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
+
 const About = () => {
+
+const [data, setData]=useState()
+const postalCode=async()=>{
+  const res=await axios.get("https://api.postalpincode.in/pincode/394210")
+   console.log(res.data)
+   setData(res.data)
+}
+
+useEffect(()=>{
+postalCode()
+},[])
+
   return (
     <div className='bg-white'>
       <div className='p-3 '>
@@ -34,9 +48,11 @@ const About = () => {
 
           </div>
           <div className='col-4 visit-img pb-5 mt-3'>
-            <Link to="/contact" className="btn visit-hover p-3 fs-5 " style={{ marginTop: "29px", color: "white" }} role="button"> VISIT US</Link>
-          </div>
+            <Link to="/contact/mapcontact1" className="btn visit-hover p-3 fs-5 " style={{ marginTop: "29px", color: "white" }} role="button"> VISIT US</Link>
+          
+           
         </div>
+        </div> 
 
         <div >
           <h4 className='text-center' style={{ fontFamily: 'Georgia, serif', color: 'rgb(137, 21, 25)' }}>VISION</h4>
